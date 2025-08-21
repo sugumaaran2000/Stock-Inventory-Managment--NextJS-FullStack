@@ -22,7 +22,7 @@ import axios from "axios";
 import Cookies from "js-cookie";
 
 const axiosInstance = axios.create({
-  baseURL: "/api"
+  baseURL: "/api",
   headers: {
     "Content-Type": "application/json",
   },
