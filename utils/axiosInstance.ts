@@ -22,10 +22,6 @@ import axios from "axios";
 import Cookies from "js-cookie";
 
 const axiosInstance = axios.create({
-  baseURL:
-    process.env.NODE_ENV === "production"
-      ? "https://singular-pastelito-db7efa.netlify.app/api" // Production URL
-      : "http://localhost:3000/api", // Localhost for development
   headers: {
     "Content-Type": "application/json",
   },
